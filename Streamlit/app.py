@@ -28,7 +28,7 @@ def charger_donnees_excel():
     """
     Charge les données Excel et retourne un DataFrame
     """
-    donnees_excel = pd.read_excel(r"C:\Users\pietr\OneDrive\Desktop\FullStack\GetAround\API\get_around_delay_analysis.xlsx")
+    donnees_excel = pd.read_excel(r"get_around_delay_analysis.xlsx")
     return donnees_excel
 
 # Charger les données des deux fichiers
