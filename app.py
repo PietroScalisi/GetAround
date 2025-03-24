@@ -19,7 +19,7 @@ def charger_donnees_csv():
     """
     Charge les données CSV et retourne un DataFrame
     """
-    donnees_csv = pd.read_csv(".\get_around_pricing_project.csv", encoding="utf_8")
+    donnees_csv = pd.read_csv("data\get_around_pricing_project.csv", encoding="utf_8")
     return donnees_csv
 
 # Chargement des données Excel
@@ -28,7 +28,7 @@ def charger_donnees_excel():
     """
     Charge les données Excel et retourne un DataFrame
     """
-    donnees_excel = pd.read_excel(r".\get_around_delay_analysis.xlsx")
+    donnees_excel = pd.read_excel(r"data\get_around_delay_analysis.xlsx")
     return donnees_excel
 
 # Charger les données des deux fichiers
