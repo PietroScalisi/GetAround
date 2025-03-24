@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 # Configuration de la page
 st.set_page_config(page_title="GetAround Dashboard", layout="wide")
@@ -22,13 +23,15 @@ def charger_donnees_csv():
     donnees_csv = pd.read_csv("../get_around_pricing_project.csv", encoding="utf_8")
     return donnees_csv
 
-# Chargement des données Excel
+
 @st.cache_data
 def charger_donnees_excel():
     """
     Charge les données Excel et retourne un DataFrame
     """
-    donnees_excel = pd.read_excel("../get_around_delay_analysis.xlsx")
+    chemin_fichier = os.path.abspath("../get_around_delay_analysis.xlsx")  # Converti en chemin absolu
+    st.write(f"Chargement du fichier: {chemin_fichier}")  # Debugging
+    donnees_excel = pd.read_excel(chemin_fichier)
     return donnees_excel
 
 # Charger les données des deux fichiers
