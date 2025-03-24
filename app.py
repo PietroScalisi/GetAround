@@ -20,7 +20,7 @@ def charger_donnees_csv():
     """
     Charge les données CSV et retourne un DataFrame
     """
-    donnees_csv = pd.read_csv("../get_around_pricing_project.csv", encoding="utf_8")
+    donnees_csv = pd.read_csv("get_around_pricing_project.csv", encoding="utf_8")
     return donnees_csv
 
 
@@ -30,7 +30,7 @@ def charger_donnees_excel():
     Charge les données Excel et retourne un DataFrame
     """
     # Ottieni il percorso assoluto del file
-    chemin_fichier = os.path.abspath("Streamlit/get_around_delay_analysis.xlsx")
+    chemin_fichier = os.path.abspath("get_around_delay_analysis.xlsx")
     
     # Controlla se il file esiste
     if not os.path.exists(chemin_fichier):
