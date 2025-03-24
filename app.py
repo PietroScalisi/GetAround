@@ -29,8 +29,16 @@ def charger_donnees_excel():
     """
     Charge les données Excel et retourne un DataFrame
     """
-    chemin_fichier = os.path.abspath("../get_around_delay_analysis.xlsx")  # Converti en chemin absolu
-    st.write(f"Chargement du fichier: {chemin_fichier}")  # Debugging
+    # Ottieni il percorso assoluto del file
+    chemin_fichier = os.path.abspath("Streamlit/get_around_delay_analysis.xlsx")
+    
+    # Controlla se il file esiste
+    if not os.path.exists(chemin_fichier):
+        st.error(f"❌ Errore: Il file non esiste nel percorso: {chemin_fichier}")
+        return None
+    else:
+        st.write(f"✅ File trovato: {chemin_fichier}")  # Debugging
+
     donnees_excel = pd.read_excel(chemin_fichier)
     return donnees_excel
 
