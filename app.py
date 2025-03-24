@@ -19,7 +19,7 @@ def charger_donnees_csv():
     """
     Charge les données CSV et retourne un DataFrame
     """
-    donnees_csv = pd.read_csv("get_around_pricing_project.csv", encoding="utf_8")
+    donnees_csv = pd.read_csv(".\get_around_pricing_project.csv", encoding="utf_8")
     return donnees_csv
 
 # Chargement des données Excel
