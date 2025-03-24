@@ -10,7 +10,7 @@ st.set_page_config(page_title="GetAround Dashboard", layout="wide")
 # Titre et introduction
 st.title("Analyse des Locations GetAround")
 st.markdown("""
-Cette dashboard permet d'analyser l'impact du délai minimum entre deux locations et leur prix de location.
+Cette dashboard permet d'analyser l'impact du délai minimum entre deux locations et leur prix de location
 """)
 
 # Chargement des données CSV
@@ -28,7 +28,7 @@ def charger_donnees_excel():
     """
     Charge les données Excel et retourne un DataFrame
     """
-    donnees_excel = pd.read_excel(r"data\get_around_delay_analysis.xlsx")
+    donnees_excel = pd.read_excel("data\get_around_delay_analysis.xlsx")
     return donnees_excel
 
 # Charger les données des deux fichiers
