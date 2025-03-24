@@ -1,8 +1,12 @@
-GetAround
+# GetAround
 
-"Une API qui comprend un modèle de machine learning sur la prédiction des prix de location de voitures et un tableau de bord avec une analyse statistique sur l’impact du délai minimum entre deux locations et leur prix de location"
+La société de location de voitures se demande :
+1-Quel est le meilleur seuil de temps pour éviter qu’il y ait des retards entre une location et une autre ? 
 
-Pour plus de détails suivez les instructions du README sur GitHub
+2-Quel est le meilleur prix pour louer des véhicules?
 
-GitHub repository :
-https://github.com/PietroScalisi/GetAround.git
+La réponse à la première question se trouve sur un tableau de bord streamlit à l’adresse suivante : https://getaround-i7yrhod9paojch7ohucv8x.streamlit.app/
+
+En ce qui concerne le prix, j’ai créé un modèle de ml capable de prédire le prix en fonction d’un certain nombre de variables.
+À l’adresse suivante vous trouverez la documentation de l’api qui permet de faire la prédiction : https://getaround-52758a126f17.herokuapp.com/docs
+
